@@ -2,6 +2,7 @@ package pl.sda.arp4.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 
 @Data
@@ -19,6 +20,10 @@ public class Samochod {
     private TypNadwozia typ;
 
     // dla sprawdzenia dostępności
+    @EqualsAndHashCode.Exclude
     private StatusSamochodu status;
+
+
+
 
 }
